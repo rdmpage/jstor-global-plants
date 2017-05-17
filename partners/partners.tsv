@@ -1,3 +1,4 @@
+Country	JSTOR	Code	Name	URL
 Angola	https://plants.jstor.org/partner/LUBA	LUBA	Instituto Superior de Ciencias da Educação (LUBA)	
 Argentina	https://plants.jstor.org/partner/BAA	BAA	Herbario Gaspar Xuárez Universidad de Buenos Aires (BAA)	http://www.agro.uba.ar/catedras/botanica/herbario
 Argentina	https://plants.jstor.org/partner/BAB	BAB	Herbario Instituto Nacional de Tecnología Agropecuaria (BAB)	http://www.inta.gov.ar/index.asp
@@ -46,9 +47,9 @@ Cameroon	https://plants.jstor.org/partner/YA	YA	Cameroon National Herbarium (YA)
 Cameroon	https://plants.jstor.org/partner/LIMBE	LIMBE	Limbe Botanic Garden	
 Canada	https://plants.jstor.org/partner/DAO	DAO	Agriculture and Agri-Food Canada (DAO)	http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1251393521021&amp;lang=eng
 Canada	https://plants.jstor.org/partner/CAN	CAN	Canadian Museum of Nature	http://nature.ca/en/research-collections/our-collections/botany-collection
-Canada	https://plants.jstor.org/partner/None	None	Royal British Columbia Museum Herbarium (V)	http://royalbcmuseum.bc.ca/nh-collections/botany-plants/
+Canada	https://plants.jstor.org/partner/V	V	Royal British Columbia Museum Herbarium (V)	http://royalbcmuseum.bc.ca/nh-collections/botany-plants/
 Canada	https://plants.jstor.org/partner/UBC	UBC	University of British Columbia (UBC)	http://www.beatymuseum.ubc.ca/herbarium/index.html
-Canada	https://plants.jstor.org/partner/None	None	University of Victoria Herbarium (UVIC)	http://www.uvic.ca/science/biology/herbarium/index.php
+Canada	https://plants.jstor.org/partner/UVIC	UVIC	University of Victoria Herbarium (UVIC)	http://www.uvic.ca/science/biology/herbarium/index.php
 Colombia	https://plants.jstor.org/partner/MEDEL	MEDEL	Herbario Gabriel Gutierrez V. de Universidad Nacional de Colombia - Sede de Medellín (MEDEL)	http://www.museos.unal.edu.co/sccs/plantilla_museo_3.php?id_museo=30&amp;id_subseccion_museo=455
 Colombia	https://plants.jstor.org/partner/CHOCO	CHOCO	Herbario Universidad Tecnológica del Chocó (CHOCO)	http://www.asociacioncolombianadebotanica.org/index.php/herbarios/102-herbario-utmc
 Colombia	https://plants.jstor.org/partner/HUA	HUA	Herbario Universidad de Antioquia (HUA)	http://www.udea.edu.co

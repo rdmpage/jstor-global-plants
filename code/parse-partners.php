@@ -3891,6 +3891,8 @@ $rows = explode('<ROW>', $html);
 
 //print_r($rows);
 
+echo "Country\tJSTOR\tCode\tName\tURL\n";
+
 foreach ($rows as $row)
 {
 	if (preg_match('/<h4 class="mvs">(?<country>.*)<\/h4>/Uu', $row, $m))
@@ -3912,8 +3914,19 @@ foreach ($rows as $row)
 			
 				//print_r($mm);
 				
-				echo "\thttps://plants.jstor.org/partner/" . $mm['internal'];
-				echo "\t" . $mm['internal'];
+				$code = $mm['internal'];
+				
+				if ($code == '' || $code == 'None')
+				{
+					if (preg_match('/\((?<code>.*)\)$/', $mm['partner'], $mmm))
+					{
+						$code = $mmm['code'];
+					}
+				}
+				
+				
+				echo "\thttps://plants.jstor.org/partner/" . $code;
+				echo "\t" . $code;
 				echo "\t" . $mm['partner'];
 				
 				if (preg_match('/<a href="(?<external>.*)" class="partner-link-external"/Uu', $partner, $mm))
