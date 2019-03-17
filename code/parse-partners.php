@@ -2,46 +2,102 @@
 
 $html = '<!doctype html>
 <html class="no-js" lang="en">
-    <head><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function c(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),c=a.length,u=0;c>u;u++)a[u].apply(i,r);return i}function u(t,e){p[t]=f(t).concat(e)}function f(t){return p[t]||[]}function s(){return r(c)}var p={};return{on:u,emit:c,create:s,listeners:f,context:e,_events:p}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!v++){var t=l.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(p,function(e,n){t[e]||(t[e]=n)});var n="https"===s.split(":")[0]||t.sslForHttp;l.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=l.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),c=t(1),u=window,f=u.document;t(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),l=e.exports={offset:i(),origin:s,features:{},xhrWrappable:d};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],12:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],13:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}]},{},["G9z0Bl"]);</script>
+    <head>
         <meta name="robots" content="noarchive,NOODP" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-         
-        <link rel="stylesheet" href="//p.j-img.org/clean_20150921T1001/files/clean/stylesheets/app.css" />
-        
-        <link rel="icon" type="image/png" href="//p.j-img.org/clean_20150921T1001/files/clean/images/favicon.ico">
-        
-        <!-- Adobe DTM Header Code -->
-        <script src="//assets.adobedtm.com/e0b918adcf7233db110ce33e1416a2e6448e08e6/satelliteLib-714d68605df5946fe8cb2cb97363b11b90c80c6f.js"></script>
-        <!-- end DTM Header Code -->
-        <script src="//p.j-img.org/clean_20150921T1001/files/clean/js/app.jquery.min.js"></script>
-        <script type="text/javascript" class="ddo">
-            //Publishing a Data Layer DDO (Digital Data Object)
-            var DDO = {};
-            DDO.userData = {
-                "paggedLoggedIn":"no",
-                "userAuthentication":"unknown",
-                "userInstitution":"unknown"
-            };
-            
-    DDO.pageData = { 
-        "pageName":"plants list of partners",
-        "pageChannel":"contributors:all partners",
-        "pageProduct": "plants"
-    };
 
-        </script>
         <title>JSTOR Global Plants: Partners</title>
-    </head>
-    <body>
-    <div class="off-canvas-wrap" data-offcanvas>
-        <div class="inner-wrap">
 
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{\'gtm.start\': new Date().getTime(),event:\'gtm.js\'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
+\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,\'script\',\'dataLayer\',\'GTM-WP93XV7\');</script>
+<!-- End Google Tag Manager -->
+
+        
+        <link rel="stylesheet" href="//www.jstor.org/assets/primarysource_20190212T2341/build/primarysource/css/primarysource.css" />
+        
+        <link rel="icon" type="image/png" href="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/favicon.ico">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body onload="validateElementsPresent(); logPerimeterXLoadingErrors()">
+
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP93XV7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        
+            <script>
+    var validateElementsPresent = function() {
+        var requiredElementSelectors = [\'#px-js\', \'#px-pixel\'];
+
+        requiredElementSelectors.forEach(function(selector){
+            if (!$(selector).length) {
+                storePerimeterXLoadingError(selector, \'element not present\');
+            }
+        });
+    }, storePerimeterXLoadingError = function(element, errorType) {
+        if (window.perimeterXLoadingErrors) {
+            if (!window.perimeterXLoadingErrors.hasOwnProperty(element)) {
+                window.perimeterXLoadingErrors[element] = errorType;
+            }
+        } else {
+            window.perimeterXLoadingErrors = {};
+            window.perimeterXLoadingErrors[element] = errorType;
+        }
+    };
+</script>
+
+
+<!-- PerimeterX -->
+<script id="px-js" type="text/javascript">
+    (function(){
+        window._pxAppId = \'PXIj40pm8c\';
+        window._pxRootUrl = \'/px/xhr\';
+
+        
+        window._pxParam1 = "gla.ac.uk";
+        
+
+        
+
+        var p = document.getElementsByTagName(\'script\')[0],
+            s = document.createElement(\'script\');
+        s.async = 1;
+        s.src = \'/px/client/main.min.js\';
+        s.onerror = function() {
+            storePerimeterXLoadingError(\'asyncScript\', \'element present but not loaded\');
+        };
+        p.parentNode.insertBefore(s,p);
+    }());
+</script>
+<div style="position:fixed; top:0; left:0;" width="1" height="1">
+    <img id="px-pixel" aria-hidden="true" src="/px/xhr/api/v1/collector/pxPixel.gif?appId=PXIj40pm8c" onerror="storePerimeterXLoadingError(\'pixel\', \'element present but not loaded\')" alt="">
+</div>
+<noscript>
+    <div style="position:fixed; top:0; left:0;" width="1" height="1">
+        <img id="px-pixel-nojs" aria-hidden="true" src="/px/xhr/api/v1/collector/noScript.gif?appId=PXIj40pm8c" alt="">
+    </div>
+</noscript>
+<!-- End PerimeterX -->
+
+
+        
+
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
                 
                     
+                    
                         
-                            
-                            
+                        
 <div class="mobile-menu hide-for-medium-up" aria-hidden="true">
     <div class="tab-bar">
         <section class="left-small">
@@ -49,7 +105,9 @@ $html = '<!doctype html>
         </section>
 
         <section class="middle tab-bar-section text-center">
-            <a href="/"><img src="//p.j-img.org/clean_20150921T1001/files/clean/images/JSTOR_Wordmark.png" alt="JSTOR"></a>
+            <a href="/">
+                <img src="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/jstor-wordmark.png" alt="JSTOR Global Plants Home">
+            </a>
         </section>
     </div>
     <aside class="left-off-canvas-menu">
@@ -60,10 +118,10 @@ $html = '<!doctype html>
     <a href="/plants/browse">Browse</a>
 </li>
 <li>
-    <a target="_blank" href="http://about.jstor.org/content/global-plants">About</a>
+    <a href="https://about.jstor.org/whats-in-jstor/primary-sources/global-plants" target="_blank" title="This link opens in a new window">About</a>
 </li>
 <li>
-    <a target="_blank" href="http://about.jstor.org/content/global-plants#access">Access</a>
+    <a href="https://www.jstor.org/librarians/products/primary-sources/" target="_blank" title="This link opens in a new window">Access</a>
 </li>
 <li class="has-dropdown">
 
@@ -83,6 +141,7 @@ $html = '<!doctype html>
     
 
 </li>
+
             <li>
                 
                     
@@ -94,62 +153,52 @@ $html = '<!doctype html>
     </aside>
 </div>
 <div class="brand-mobile show-for-small-only columns text-center">
-    <img class="brand-img" src="//p.j-img.org/clean_20150921T1001/files/clean/images/ps/globalplants_logo_220x58.png" alt="Global Plants" />
-    <div class="sub-brand mbs">&nbsp;</div>
+    <h2 class="brand">Global Plants</h2>
+    <h3 class="sub-brand"></h3>
 </div>
-                        
+
+                    
                 
 
-            <div id="skipNav">
-                <a class="visuallyhidden" href="#content">Skip to Main Content</a>
-            </div>
-            <div class="row">
-                <div class="small-12 columns">
+                <div id="skipNav">
+                    <a class="visuallyhidden" href="#content">Skip to Main Content</a>
+                </div>
 
-                    
-                    
+                
+
+                <div class="row">
+                    <div class="small-12 columns">
                         
                             
                             
+                                
+                                
 
-<div class="user-info txtR show-for-medium-up pbs">
-    
-    <div class="provider-info pbs">
-        Access provided by University of Glasgow
-    </div>
-    
-    
-        
-        <a href="/login?redirectUri=%2Fpartners" class="login">Login</a>
-        
-    
-</div>
-<nav class="top-bar show-for-medium-up" data-topbar role="navigation">
-    <section class="top-bar-section">
+<nav class="top-bar show-for-medium-up top-bar-section mtl" data-topbar role="navigation">
+    <div class="row">
         <!-- Left Nav Section -->
-        <ul class="left">
-            <li>
-                <a class="phn mbm prm" href="/">
-                    
-                        <img class="jlogo-small" src="//p.j-img.org/clean_20150921T1001/files/clean/images/JSTOR_Logo_RGB_60x76.gif" alt="JSTOR" />
-                    
-                </a>
-            </li>
-            <li>
-                <img class="brand-img" src="//p.j-img.org/clean_20150921T1001/files/clean/images/ps/globalplants_logo_220x58.png" alt="Global Plants" />
-                <div class="sub-brand"></div>
-            </li>
-        </ul>
-        <!-- Right Nav Section -->
-        <ul class="right global-nav-list mtm">
-            <li>
+        <div class="columns large-6 medium-9">
+            <ul>
+                <li>
+                    <a class="phn mbm prs" href="/">
+                        <img src="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/jstor-logo.png" srcset="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/jstor-logo.png 1x, //www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/jstor-logo@2x.png 2x" class="non-responsive" alt="JSTOR Global Plants Home" width="65" height="90">
+                    </a>
+                </li>
+                <li>
+                    <div class="plm">
+                        <h2 class="brand">Global Plants</h2>
+                        <h3 class="sub-brand"></h3>
+                    </div>
+                    <div class="show-for-medium">
+                        <ul class="global-nav-list">
+                            <li>
     <a href="/plants/browse">Browse</a>
 </li>
 <li>
-    <a target="_blank" href="http://about.jstor.org/content/global-plants">About</a>
+    <a href="https://about.jstor.org/whats-in-jstor/primary-sources/global-plants" target="_blank" title="This link opens in a new window">About</a>
 </li>
 <li>
-    <a target="_blank" href="http://about.jstor.org/content/global-plants#access">Access</a>
+    <a href="https://www.jstor.org/librarians/products/primary-sources/" target="_blank" title="This link opens in a new window">Access</a>
 </li>
 <li class="has-dropdown">
 
@@ -169,15 +218,68 @@ $html = '<!doctype html>
     
 
 </li>
-        </ul>
-    </section>
-</nav>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Right Nav Section -->
+        <div class="columns large-6 medium-3">
+            <div class="txtR right">
+                <div class="provider-info pvs">
+                    
+                            Access provided by University of Glasgow and Bulgarian Academy of Sciences and University of Cambridge
+                    
+                </div>
+                <div>
+                    
+                        
+                            <a href="/login?redirectUri=%2Fpartners" class="login">Login</a>
                         
                     
+                </div>
+                <ul class="global-nav-list hide-for-medium">
+                    <li>
+    <a href="/plants/browse">Browse</a>
+</li>
+<li>
+    <a href="https://about.jstor.org/whats-in-jstor/primary-sources/global-plants" target="_blank" title="This link opens in a new window">About</a>
+</li>
+<li>
+    <a href="https://www.jstor.org/librarians/products/primary-sources/" target="_blank" title="This link opens in a new window">Access</a>
+</li>
+<li class="has-dropdown">
 
-                    
+
+
+
+    
+        
+            
+            
+            <a href="/login?redirectUri=%2Fprofile" class="profile-login prn">MyAccount</a>
+            <ul class="dropdown">
+              <li><a href="/login?redirectUri=%2Fplants%2Fsaveditems">Saved Items</a></li>
+              <li><a href="/login?redirectUri=%2Fprofile">Profile</a></li>
+            </ul>
+        
+    
+
+</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+                            
+                        
+
                         
                             
+                                
 <div class="search-plants row">
 	<div class="small-12 columns">
 	   <form id="" class="globalSearch plants-search-dropdown" action="/search" method="GET">
@@ -195,10 +297,10 @@ $html = '<!doctype html>
                         <option
                             
                                 
-                                value=\'name\'
+                                data-autocomplete-parameters=\'{&quot;limitTermLength&quot;: &quot;true&quot;, &quot;fields&quot;: &quot;name&quot;}\'
                             
                                 
-                                data-autocomplete-parameters=\'{&quot;limitTermLength&quot;: &quot;true&quot;, &quot;fields&quot;: &quot;name&quot;}\'
+                                value=\'name\'
                             
                         >
                             Names
@@ -207,10 +309,10 @@ $html = '<!doctype html>
                         <option
                             
                                 
-                                value=\'namewithsynonyms\'
+                                data-autocomplete-parameters=\'{&quot;limitTermLength&quot;: &quot;true&quot;, &quot;fields&quot;: &quot;namewithsynonyms&quot;}\'
                             
                                 
-                                data-autocomplete-parameters=\'{&quot;limitTermLength&quot;: &quot;true&quot;, &quot;fields&quot;: &quot;namewithsynonyms&quot;}\'
+                                value=\'namewithsynonyms\'
                             
                         >
                             Names with Synonyms
@@ -219,10 +321,10 @@ $html = '<!doctype html>
                         <option
                             
                                 
-                                value=\'places\'
+                                data-autocomplete-parameters=\'{&quot;fields&quot;: &quot;places&quot;}\'
                             
                                 
-                                data-autocomplete-parameters=\'{&quot;fields&quot;: &quot;places&quot;}\'
+                                value=\'places\'
                             
                         >
                             Places
@@ -240,10 +342,10 @@ $html = '<!doctype html>
                         <option
                             
                                 
-                                value=\'free_text\'
+                                data-autocomplete-parameters=\'{&quot;fields&quot;: &quot;name,namewithsynonyms,places&quot;}\'
                             
                                 
-                                data-autocomplete-parameters=\'{&quot;fields&quot;: &quot;name,namewithsynonyms,places&quot;}\'
+                                value=\'free_text\'
                             
                         >
                             Free Text
@@ -261,7 +363,7 @@ $html = '<!doctype html>
             
                 <input type="hidden" name="so" value="ps_group_by_genus_species asc">
             
-            <input id="globalSearchBox" title="Search Box" name="Query" type="text" class="searchBox mvn" placeholder="Search..." value="" data-autocomplete="/autocomplete/" data-autocomplete-query-parameter-name="prefix">
+            <input id="globalSearchBox" title="Search Box" name="Query" type="text" class="searchBox mvn" placeholder="Search..." value="">
         </div>
         <div class="small-1 end columns">
             <button type="submit" class="button button_search">Search</button>
@@ -296,21 +398,24 @@ $html = '<!doctype html>
 
     </script>
 
-                        
 
-                        
+                            
 
+                            
+
+                            
                         
-                    
+                    </div>
                 </div>
-            </div>
-            <div id="content" role="main" class="content">
-                <div class="row">
-                    <div class="large-12 columns">
-                        
+
+                <div id="content" role="main" class="content">
+                    
+                    <div class="row">
+                        <div class="small-12 columns">
+                            
     <h1 class="partner-title">Global Plants Partners</h1>
     <div class="partner-map" id="partner-map-plants">
-        <img src="//p.j-img.org/clean_20150921T1001/files/clean/images/Plants_PartnerMap.jpg" alt="Global Plants Partners map">
+        <img src="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/Plants_PartnerMap.jpg" alt="Global Plants Partners map">
     </div>
     <div class="row">
         <div class="small-12 columns">
@@ -337,7 +442,7 @@ $html = '<!doctype html>
                     <a href="/partner/LUBA" class="partner-link-internal">Instituto Superior de Ciencias da Educação (LUBA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://isced.ed.ao/" class="partner-link-external" target="_blank">Visit LUBA</a>
                 </div>
             </div>
          
@@ -353,7 +458,7 @@ $html = '<!doctype html>
                     <a href="/partner/BAA" class="partner-link-internal">Herbario Gaspar Xuárez Universidad de Buenos Aires (BAA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.agro.uba.ar/catedras/botanica/herbario" class="partner-link-external" target="_blank">Visit BAA</a>
+                    <a href="https://www.agro.uba.ar/catedras/botanica_sistematica/herbario" class="partner-link-external" target="_blank">Visit BAA</a>
                 </div>
             </div>
          
@@ -362,7 +467,7 @@ $html = '<!doctype html>
                     <a href="/partner/BAB" class="partner-link-internal">Herbario Instituto Nacional de Tecnología Agropecuaria (BAB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.inta.gov.ar/index.asp" class="partner-link-external" target="_blank">Visit BAB</a>
+                    <a href="https://inta.gob.ar/unidades/211000/herbario-taxonomia-y-bioprospeccion" class="partner-link-external" target="_blank">Visit BAB</a>
                 </div>
             </div>
          
@@ -371,7 +476,7 @@ $html = '<!doctype html>
                     <a href="/partner/BAF" class="partner-link-internal">Herbario Museo de Farmacobotánica Juan A. Domínguez Universidad de Buenos Aires (BAF)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.uba.ar/contenido/164" class="partner-link-external" target="_blank">Visit BAF</a>
                 </div>
             </div>
          
@@ -395,10 +500,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/ANGU" class="partner-link-internal">Instituto Nacional de Tecnología Agropecuaria, Anguil, La Pampa, Argentina</a>
+                    <a href="/partner/ANGU" class="partner-link-internal">Instituto Nacional de Tecnología Agropecuaria (ANGU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.inta.gov.ar/index.asp" class="partner-link-external" target="_blank">Visit ANGU</a>
+                    <a href="https://inta.gob.ar/anguil" class="partner-link-external" target="_blank">Visit ANGU</a>
                 </div>
             </div>
          
@@ -407,7 +512,7 @@ $html = '<!doctype html>
                     <a href="/partner/BAL" class="partner-link-internal">Instituto Nacional de Tecnología Agropecuaria, Estación Experimental Agropecuaria (BAL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://inta.gob.ar/balcarce" class="partner-link-external" target="_blank">Visit BAL</a>
                 </div>
             </div>
          
@@ -450,7 +555,7 @@ $html = '<!doctype html>
                     <a href="/partner/ERE" class="partner-link-internal">Institute of Botany of the National Academy of Sciences of Armenia (ERE)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.sci.am/orgsview.php?id=12&amp;langid=2#top" class="partner-link-external" target="_blank">Visit ERE</a>
                 </div>
             </div>
          
@@ -511,7 +616,7 @@ $html = '<!doctype html>
                     <a href="/partner/NT" class="partner-link-internal">Northern Territory Herbarium (NT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://nt.gov.au/environment/native-plants/native-plants-and-nt-herbarium" class="partner-link-external" target="_blank">Visit NT</a>
                 </div>
             </div>
          
@@ -544,10 +649,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/HO" class="partner-link-internal">Tasmanian Herbarium</a>
+                    <a href="/partner/HO" class="partner-link-internal">Tasmanian Herbarium, Tasmanian Museum and Art Gallery (HO)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.tmag.tas.gov.au/collections_and_research/tasmanian_herbarium" class="partner-link-external" target="_blank">Visit HO</a>
                 </div>
             </div>
          
@@ -572,7 +677,7 @@ $html = '<!doctype html>
                     <a href="/partner/GZU" class="partner-link-internal">Karl-Franzens-Universität Graz (GZU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www-classic.uni-graz.at/botwww/home-system-bot.html" class="partner-link-external" target="_blank">Visit GZU</a>
+                    <a href="https://botanik.uni-graz.at/de/services/sammlungen/herbarsammlungen/" class="partner-link-external" target="_blank">Visit GZU</a>
                 </div>
             </div>
          
@@ -603,10 +708,10 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BAK" class="partner-link-internal">Institute of Botany of Azerbaijan National Academy of Sciences</a>
+                    <a href="/partner/BAK" class="partner-link-internal">Academy of Sciences of Azerbaijan (BAK)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://botany.az/en/" class="partner-link-external" target="_blank">Visit BAK</a>
                 </div>
             </div>
          
@@ -646,7 +751,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BRLU" class="partner-link-internal">Laboratoire de Botanique Systématique et de Phytosociologie, Université Libre de Bruxelles (Brussels)</a>
+                    <a href="/partner/BRLU" class="partner-link-internal">Laboratoire de Botanique Systématique et de Phytosociologie, Université Libre de Bruxelles (BRLU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.ulb.ac.be/" class="partner-link-external" target="_blank">Visit BRLU</a>
@@ -717,7 +822,7 @@ $html = '<!doctype html>
                     <a href="/partner/MG" class="partner-link-internal">Herbario Museu Paraense Emílio Goeldi (MG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://marte.museu-goeldi.br/herbario" class="partner-link-external" target="_blank">Visit MG</a>
+                    <a href="https://www.museu-goeldi.br/assuntos/colecoes/biologicas/botanica/herbario-mg" class="partner-link-external" target="_blank">Visit MG</a>
                 </div>
             </div>
          
@@ -726,7 +831,7 @@ $html = '<!doctype html>
                     <a href="/partner/BHCB" class="partner-link-internal">Herbario Universidade Federal de Minas Gerais (BHCB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.botanica.icb.ufmg.br/herbario.htm" class="partner-link-external" target="_blank">Visit BHCB</a>
+                    <a href="http://depto.icb.ufmg.br/dbot/?pag=servicos_ver&amp;id_serv=NQ==&amp;act=8" class="partner-link-external" target="_blank">Visit BHCB</a>
                 </div>
             </div>
          
@@ -735,7 +840,7 @@ $html = '<!doctype html>
                     <a href="/partner/SPF" class="partner-link-internal">Herbario Universidade de São Paulo (SPF)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://felix.ib.usp.br/Lab8.htm" class="partner-link-external" target="_blank">Visit SPF</a>
+                    <a href="http://www.ib.usp.br/en/about-2/facilities.html" class="partner-link-external" target="_blank">Visit SPF</a>
                 </div>
             </div>
          
@@ -816,7 +921,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/LIMBE" class="partner-link-internal">Limbe Botanic Garden</a>
+                    <a href="/partner/SCA" class="partner-link-internal">Limbe Botanical &amp; Zoological Gardens (SCA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     
@@ -841,19 +946,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/CAN" class="partner-link-internal">Canadian Museum of Nature</a>
+                    <a href="/partner/CAN" class="partner-link-internal">Canadian Museum of Nature Herbarium (CAN)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://nature.ca/en/research-collections/our-collections/botany-collection" class="partner-link-external" target="_blank">Visit CAN</a>
+                    <a href="https://nature.ca/en/research-collections/collections/plants-algae" class="partner-link-external" target="_blank">Visit CAN</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/None" class="partner-link-internal">Royal British Columbia Museum Herbarium (V)</a>
+                    <a href="/partner/V" class="partner-link-internal">Royal British Columbia Museum Herbarium (V)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://royalbcmuseum.bc.ca/nh-collections/botany-plants/" class="partner-link-external" target="_blank">Visit None</a>
+                    <a href="http://royalbcmuseum.bc.ca/nh-collections/botany-plants/" class="partner-link-external" target="_blank">Visit V</a>
                 </div>
             </div>
          
@@ -868,10 +973,26 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/None" class="partner-link-internal">University of Victoria Herbarium (UVIC)</a>
+                    <a href="/partner/UVIC" class="partner-link-internal">University of Victoria Herbarium (UVIC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.uvic.ca/science/biology/herbarium/index.php" class="partner-link-external" target="_blank">Visit None</a>
+                    <a href="http://www.uvic.ca/science/biology/herbarium/index.php" class="partner-link-external" target="_blank">Visit UVIC</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <h4 class="mvs">Chile</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/SGO" class="partner-link-internal">Museo Nacional de Historia Natural (SGO)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.mnhn.cl" class="partner-link-external" target="_blank">Visit SGO</a>
                 </div>
             </div>
          
@@ -887,7 +1008,7 @@ $html = '<!doctype html>
                     <a href="/partner/MEDEL" class="partner-link-internal">Herbario Gabriel Gutierrez V. de Universidad Nacional de Colombia - Sede de Medellín (MEDEL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.museos.unal.edu.co/sccs/plantilla_museo_3.php?id_museo=30&amp;id_subseccion_museo=455" class="partner-link-external" target="_blank">Visit MEDEL</a>
+                    <a href="http://ciencias.medellin.unal.edu.co/museos/herbario/index.php/en/" class="partner-link-external" target="_blank">Visit MEDEL</a>
                 </div>
             </div>
          
@@ -941,7 +1062,7 @@ $html = '<!doctype html>
                     <a href="/partner/FMB" class="partner-link-internal">Herbarium Federico Medem Bogotá Instituto Alexander von Humboldt (FMB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.humboldt.org.co/es/test/item/146-herbario-federico-medem" class="partner-link-external" target="_blank">Visit FMB</a>
                 </div>
             </div>
          
@@ -968,7 +1089,113 @@ $html = '<!doctype html>
                     <a href="/partner/VALLE" class="partner-link-internal">Universidad Nacional de Colombia Herbario (VALLE)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.museos.unal.edu.co/sccs/plantilla_museo_2.php?id_subseccion_museo=258&amp;id_museo=37" class="partner-link-external" target="_blank">Visit VALLE</a>
+                    <a href="http://ciencias.bogota.unal.edu.co/icn/colecciones-cientificas/herbario/" class="partner-link-external" target="_blank">Visit VALLE</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <h4 class="mvs">Congo, the Democratic Republic of the</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/EPU" class="partner-link-internal">Centre de Formation et de Recherche en Conservation Forestière-ICCN (EPU)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.iccnrdc.org/index.html" class="partner-link-external" target="_blank">Visit EPU</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/LWI" class="partner-link-internal">Centre de Recherche en Sciences Naturelles-CRSN-Lwiro Herbarium (LWI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/KIP" class="partner-link-internal">Institut National pour l&#39;Etude et la Recherche Agronomique-Herbarium de la station de Kipopo (KIP)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/MLGU" class="partner-link-internal">Institut National pour l&#39;Etude et la Recherche Agronomiques Herbarium (MLGU)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.congobiodiv.org/en/infrastructure/herbaria/mulungu" class="partner-link-external" target="_blank">Visit MLGU</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/LUKI" class="partner-link-internal">Institut National pour l&#39;Etude et la Recherche Agronomiques-Herbarium de Luki (LUKI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/YBI" class="partner-link-internal">Institut National pour l&#39;Étude et la Recherche Agronomique-Centre de Recherches Herbier (YBI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://inera-rdc.org/" class="partner-link-external" target="_blank">Visit YBI</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/IPNC" class="partner-link-internal">Institut des Parcs Nationaux du Congo</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.apncb.be/history/institute-national-parks-belgian-congo" class="partner-link-external" target="_blank">Visit IPNC</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/EALA" class="partner-link-internal">Jardin Botanique d&#39;Eala Herbarium (EALA)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://lejardindeala.wordpress.com/" class="partner-link-external" target="_blank">Visit EALA</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/KISA" class="partner-link-internal">Jardin Botanique de Kisantu - ICCN (KISA)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.kisantu.net" class="partner-link-external" target="_blank">Visit KISA</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/LSHI" class="partner-link-internal">Université Nationale du Zaïre Herbier (LSHI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.unilu.ac.cd/" class="partner-link-external" target="_blank">Visit LSHI</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/IUK" class="partner-link-internal">Université de Kinshasa (IUK)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.unikin.ac.cd/" class="partner-link-external" target="_blank">Visit IUK</a>
                 </div>
             </div>
          
@@ -984,7 +1211,7 @@ $html = '<!doctype html>
                     <a href="/partner/INB" class="partner-link-internal">Herbario Instituto Nacional de Biodiversidad (INB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.inbio.ac.cr/es/default.html" class="partner-link-external" target="_blank">Visit INB</a>
+                    <a href="http://www.conabio.gob.mx/remib/doctos/inbio.html" class="partner-link-external" target="_blank">Visit INB</a>
                 </div>
             </div>
          
@@ -1048,7 +1275,7 @@ $html = '<!doctype html>
                     <a href="/partner/JBSD" class="partner-link-internal">Jardín Botánico Nacional Dr. Rafael M. Moscoso Herbarium (JBSD)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.jbn-sdq.org/" class="partner-link-external" target="_blank">Visit JBSD</a>
+                    <a href="http://www.jbn.gob.do/index.php" class="partner-link-external" target="_blank">Visit JBSD</a>
                 </div>
             </div>
          
@@ -1061,7 +1288,16 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/CHEP" class="partner-link-internal">Herbario Escuela Superior Politécnica del Chimborazo</a>
+                    <a href="/partner/QPLS" class="partner-link-internal">Biblioteca Ecuatoriana Aurelio Espinosa Pólit (QPLS)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.beaep.ec/" class="partner-link-external" target="_blank">Visit QPLS</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/CHEP" class="partner-link-internal">Escuela Superior Politécnica del Chimborazo Herbario (CHEP)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://biblioteca.espoch.edu.ec/herbario.htm" class="partner-link-external" target="_blank">Visit CHEP</a>
@@ -1082,22 +1318,31 @@ $html = '<!doctype html>
                     <a href="/partner/QCA" class="partner-link-internal">Pontificia Universidad Católica del Ecuador (QCA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.biologia.puce.edu.ec/natura.php?c=159" class="partner-link-external" target="_blank">Visit QCA</a>
+                    <a href="https://www.puce.edu.ec/portal/content/Herbario/477?link=oln30.redirect" class="partner-link-external" target="_blank">Visit QCA</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/QUSF" class="partner-link-internal">Universidad San Francisco de Quito</a>
+                    <a href="/partner/LOJA" class="partner-link-internal">Universidad Nacional de Loja Herbario (LOJA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://unl.edu.ec/" class="partner-link-external" target="_blank">Visit LOJA</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/GUAY" class="partner-link-internal">Universidad de Guayaquil</a>
+                    <a href="/partner/QUSF" class="partner-link-internal">Universidad San Francisco de Quito Herbario (QUSF)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://www.usfq.edu.ec/Paginas/Inicio.aspx" class="partner-link-external" target="_blank">Visit QUSF</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/GUAY" class="partner-link-internal">Universidad de Guayaquil Herbario (GUAY)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.ug.edu.ec" class="partner-link-external" target="_blank">Visit GUAY</a>
@@ -1106,19 +1351,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/LOJA" class="partner-link-internal">Universidad de Loja</a>
+                    <a href="/partner/HA" class="partner-link-internal">Universidad del Azuay Herbario (HA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
-                </div>
-            </div>
-         
-            <div class="row mbm">
-                <div class="small-8 large-9 columns">
-                    <a href="/partner/HA" class="partner-link-internal">Universidad del Azuay</a>
-                </div>
-                <div class="small-4 large-3 columns">
-                    <a href="http://www.uazuay.edu.ec/HerbarioAzuay/" class="partner-link-external" target="_blank">Visit HA</a>
+                    <a href="https://biologia.uazuay.edu.ec/" class="partner-link-external" target="_blank">Visit HA</a>
                 </div>
             </div>
          
@@ -1131,7 +1367,7 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/ASTU" class="partner-link-internal">Assiut University Herbarium</a>
+                    <a href="/partner/ASTU" class="partner-link-internal">Assiut University Herbarium (ASTU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.aun.edu.eg/faculty_science/bot_herbarium.htm" class="partner-link-external" target="_blank">Visit ASTU</a>
@@ -1143,7 +1379,7 @@ $html = '<!doctype html>
                     <a href="/partner/CAI" class="partner-link-internal">Cairo University (CAI) Cairo University Herbarium (CAI)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://cu.edu.eg/Home" class="partner-link-external" target="_blank">Visit CAI</a>
                 </div>
             </div>
          
@@ -1209,7 +1445,7 @@ $html = '<!doctype html>
                     <a href="/partner/TUR" class="partner-link-internal">University of Turku Herbarium (TUR)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.utu.fi/ml/biologia/kasvimuseo" class="partner-link-external" target="_blank">Visit TUR</a>
+                    <a href="https://www.utu.fi/fi/yksikot/sci/yksikot/biologia/yleisopalvelut/kasvimuseo/Sivut/home.aspx" class="partner-link-external" target="_blank">Visit TUR</a>
                 </div>
             </div>
          
@@ -1222,7 +1458,7 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/ALF" class="partner-link-internal">Campus International de Baillarguet, Montpellier, France</a>
+                    <a href="/partner/ALF" class="partner-link-internal">CIRAD - Agricultural Research for Development (ALF)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.cirad.fr/actualites/toutes-les-actualites/communiques-de-presse/2009/herbier" class="partner-link-external" target="_blank">Visit ALF</a>
@@ -1277,7 +1513,7 @@ $html = '<!doctype html>
                     <a href="/partner/TBI" class="partner-link-internal">National Herbarium of Georgia (TBI)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://iliauni.edu.ge/en/iliauni/institutebi-451/botanikis-insitituti" class="partner-link-external" target="_blank">Visit TBI</a>
                 </div>
             </div>
          
@@ -1290,10 +1526,10 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BRM" class="partner-link-internal">Alfred Wegener Institute for Polar and Marine Research, Bremerhave</a>
+                    <a href="/partner/BRM" class="partner-link-internal">Alfred-Wegener-Institut für Polar- und Meeresforschung Herbarium (BRM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.awi.de/de/" class="partner-link-external" target="_blank">Visit BRM</a>
+                    <a href="https://www.awi.de/en.html" class="partner-link-external" target="_blank">Visit BRM</a>
                 </div>
             </div>
          
@@ -1338,13 +1574,13 @@ $html = '<!doctype html>
                     <a href="/partner/MSB" class="partner-link-internal">Herbarium Fakultät für Biologie, Systematische Botanik und Mykologie, Ludwig-Maximilians Universität (MSB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.botanik.biologie.uni-muenchen.de/botsyst/herbar.html" class="partner-link-external" target="_blank">Visit MSB</a>
+                    <a href="https://www.en.uni-muenchen.de/index.html" class="partner-link-external" target="_blank">Visit MSB</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/FR" class="partner-link-internal">Herbarium Senckenbergianum (FR)</a>
+                    <a href="/partner/FR" class="partner-link-internal">Herbarium Senckenbergianum Frankfurt am Main (FR)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.senckenberg.de/root/index.php?page_id=8985" class="partner-link-external" target="_blank">Visit FR</a>
@@ -1353,10 +1589,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/GLM" class="partner-link-internal">Herbarium Senckenbergianum Görlitz (GLM)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.senckenberg.de/goerlitz" class="partner-link-external" target="_blank">Visit GLM</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/TUB" class="partner-link-internal">Herbarium Tubingense University of Tübingen (TUB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.systbot.uni-tuebingen.de/" class="partner-link-external" target="_blank">Visit TUB</a>
+                    <a href="https://www.uni-tuebingen.de/en/faculties/faculty-of-science/departments/biology/institutes/evolutionecology/groups/plant-evolutionary-ecology/herbarium.html" class="partner-link-external" target="_blank">Visit TUB</a>
                 </div>
             </div>
          
@@ -1365,7 +1610,7 @@ $html = '<!doctype html>
                     <a href="/partner/REG" class="partner-link-internal">Herbarium der Regensburgischen Botanischen Gesellschaft von 1790 e. V. (REG) Universität Regensburg Herbarium (REG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.regensburgische-botanische-gesellschaft.de/herbar.html" class="partner-link-external" target="_blank">Visit REG</a>
+                    <a href="http://www.regensburgische-botanische-gesellschaft.de/" class="partner-link-external" target="_blank">Visit REG</a>
                 </div>
             </div>
          
@@ -1380,15 +1625,6 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BHUPM" class="partner-link-internal">Institut für Paläontologie, Museum für Naturkunde, Berlin, Germany</a>
-                </div>
-                <div class="small-4 large-3 columns">
-                    <a href="http://www.naturkundemuseum-berlin.de/" class="partner-link-external" target="_blank">Visit BHUPM</a>
-                </div>
-            </div>
-         
-            <div class="row mbm">
-                <div class="small-8 large-9 columns">
                     <a href="/partner/HAL" class="partner-link-internal">Martin-Luther-Universität (HAL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
@@ -1398,10 +1634,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/GLM" class="partner-link-internal">Senckenberg Museum für Naturkunde Görlitz Herbarium (GLM)</a>
+                    <a href="/partner/BHUPM" class="partner-link-internal">Museum für Naturkunde Herbarium (BHUPM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.senckenberg.de/goerlitz" class="partner-link-external" target="_blank">Visit GLM</a>
+                    <a href="http://www.naturkundemuseum-berlin.de/" class="partner-link-external" target="_blank">Visit BHUPM</a>
                 </div>
             </div>
          
@@ -1416,10 +1652,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/UBT" class="partner-link-internal">University of Beyreuth Herbarium</a>
+                    <a href="/partner/UBT" class="partner-link-internal">University of Bayreuth Herbarium (UBT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.obg.uni-bayreuth.de/de/Herbarium_UBT/" class="partner-link-external" target="_blank">Visit UBT</a>
+                    <a href="http://www.obg.uni-bayreuth.de/de/index.html" class="partner-link-external" target="_blank">Visit UBT</a>
                 </div>
             </div>
          
@@ -1437,7 +1673,7 @@ $html = '<!doctype html>
                     <a href="/partner/HEID" class="partner-link-internal">Universität Heidelberg (HEID)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://ginkgo.bot.uni-heidelberg.de/index.php" class="partner-link-external" target="_blank">Visit HEID</a>
+                    <a href="https://www.uni-heidelberg.de/" class="partner-link-external" target="_blank">Visit HEID</a>
                 </div>
             </div>
          
@@ -1478,7 +1714,7 @@ $html = '<!doctype html>
                     <a href="/partner/UVAL" class="partner-link-internal">Universidad del Valle de Guatemala (UVAL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://herbario.uvg.edu.gt/" class="partner-link-external" target="_blank">Visit UVAL</a>
+                    <a href="http://uvg.edu.gt/index.html" class="partner-link-external" target="_blank">Visit UVAL</a>
                 </div>
             </div>
          
@@ -1491,10 +1727,19 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/SERG" class="partner-link-internal">Herbier National de Guinée Sérédou-Macenta (SERG)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.irag-guinee.org/" class="partner-link-external" target="_blank">Visit SERG</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/IRAG" class="partner-link-internal">Institut de Recherche Agronomique de Guinée</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.irag-guinee.org/" class="partner-link-external" target="_blank">Visit IRAG</a>
                 </div>
             </div>
          
@@ -1510,7 +1755,7 @@ $html = '<!doctype html>
                     <a href="/partner/EAP" class="partner-link-internal">Escuela Agrícola Panamericana El Zamorano (EAP)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://herbario.zamorano.edu/" class="partner-link-external" target="_blank">Visit EAP</a>
+                    <a href="https://www.zamorano.edu/" class="partner-link-external" target="_blank">Visit EAP</a>
                 </div>
             </div>
          
@@ -1542,7 +1787,7 @@ $html = '<!doctype html>
                     <a href="/partner/FT" class="partner-link-internal">Centro Studi Erbario Tropicale Università degli Studi di Firenze (FT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.erbariotropicale.unifi.it/mdswitch.html" class="partner-link-external" target="_blank">Visit FT</a>
+                    <a href="https://www.unifi.it/index.php" class="partner-link-external" target="_blank">Visit FT</a>
                 </div>
             </div>
          
@@ -1551,7 +1796,16 @@ $html = '<!doctype html>
                     <a href="/partner/FI" class="partner-link-internal">Museo di Storia Naturale dell&#39;Università, Firenze (FI)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.erbariotropicale.unifi.it/mdswitch.html" class="partner-link-external" target="_blank">Visit FI</a>
+                    <a href="https://www.msn.unifi.it/vp-242-paleontologia.html" class="partner-link-external" target="_blank">Visit FI</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/PI" class="partner-link-internal">Università di Pisa Herbarium (PI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.sma.unipi.it/it/orto-e-museo-botanico.html" class="partner-link-external" target="_blank">Visit PI</a>
                 </div>
             </div>
          
@@ -1564,7 +1818,7 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/TNS" class="partner-link-internal">National Museum of Nature and Science Herbarium</a>
+                    <a href="/partner/TNS" class="partner-link-internal">National Museum of Nature and Science Herbarium (TNS)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.kahaku.go.jp/english/" class="partner-link-external" target="_blank">Visit TNS</a>
@@ -1599,7 +1853,7 @@ $html = '<!doctype html>
                     <a href="/partner/TEF" class="partner-link-internal">Herbier du FO.FI.FA (TEF)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.fofifa.mg/" class="partner-link-external" target="_blank">Visit TEF</a>
                 </div>
             </div>
          
@@ -1622,6 +1876,15 @@ $html = '<!doctype html>
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
                     <a href="/partner/FRIM" class="partner-link-internal">Forest Research Institute Malaysia</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.frim.gov.my/" class="partner-link-external" target="_blank">Visit FRIM</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/FRIM" class="partner-link-internal">Forest Research Institute Malaysia Herbarium (KEP)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.frim.gov.my/" class="partner-link-external" target="_blank">Visit FRIM</a>
@@ -1656,7 +1919,7 @@ $html = '<!doctype html>
                     <a href="/partner/CIIDIR" class="partner-link-internal">CIIDIR Unidad Durango, Instituto Politécnico Nacional Herbario (CIIDIR)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.ciidirdurango.ipn.mx/investigacion/Paginas/herbario.aspx" class="partner-link-external" target="_blank">Visit CIIDIR</a>
+                    <a href="http://www.ciidirmich.ipn.mx/Paginas/Inicio.aspx" class="partner-link-external" target="_blank">Visit CIIDIR</a>
                 </div>
             </div>
          
@@ -1674,7 +1937,7 @@ $html = '<!doctype html>
                     <a href="/partner/CHAPA" class="partner-link-internal">Colegio de Postgraduados Herbario (CHAPA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.cibnor.gob.mx/" class="partner-link-external" target="_blank">Visit CHAPA</a>
                 </div>
             </div>
          
@@ -1755,7 +2018,7 @@ $html = '<!doctype html>
                     <a href="/partner/UAMIZ" class="partner-link-internal">Herbário Universidad Autónoma Metropolitana, Iztapalapa (UAMIZ)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.uam.mx/" class="partner-link-external" target="_blank">Visit UAMIZ</a>
                 </div>
             </div>
          
@@ -1764,7 +2027,7 @@ $html = '<!doctype html>
                     <a href="/partner/QMEX" class="partner-link-internal">Herbário Universidad Autónoma de Querétaro, Centro Universitario (QMEX)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.uaq.mx/" class="partner-link-external" target="_blank">Visit QMEX</a>
                 </div>
             </div>
          
@@ -1773,7 +2036,7 @@ $html = '<!doctype html>
                     <a href="/partner/EBUM" class="partner-link-internal">Herbário Universidad Michoacana de San Nicolás de Hidalgo (EBUM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.umich.mx/" class="partner-link-external" target="_blank">Visit EBUM</a>
                 </div>
             </div>
          
@@ -1782,7 +2045,7 @@ $html = '<!doctype html>
                     <a href="/partner/IBUG" class="partner-link-internal">Herbário Universidad de Guadalajara (IBUG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://udg.mx/es" class="partner-link-external" target="_blank">Visit IBUG</a>
                 </div>
             </div>
          
@@ -1833,10 +2096,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/UADY" class="partner-link-internal">Universidad Autónoma de Yucatán Herbario (UADY)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.uady.mx/index/" class="partner-link-external" target="_blank">Visit UADY</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/UJAT" class="partner-link-internal">Universidad Juárez Autónoma de Tabasco Herbario (UJAT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.ujat.mx/interioradentro.aspx?ID=10416&amp;NODO=66" class="partner-link-external" target="_blank">Visit UJAT</a>
+                    <a href="http://www.ujat.mx/dacbiol" class="partner-link-external" target="_blank">Visit UJAT</a>
                 </div>
             </div>
          
@@ -1879,7 +2151,7 @@ $html = '<!doctype html>
                     <a href="/partner/RAB" class="partner-link-internal">Institut Scientifique, Rabat-Agdal (RAB) Université Mohammed V-Agdal (RAB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.israbat.ac.ma/spip.php?rubrique40" class="partner-link-external" target="_blank">Visit RAB</a>
+                    <a href="http://www.israbat.ac.ma/" class="partner-link-external" target="_blank">Visit RAB</a>
                 </div>
             </div>
          
@@ -1920,7 +2192,7 @@ $html = '<!doctype html>
                     <a href="/partner/KATH" class="partner-link-internal">National Herbarium of Nepal (KATH)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.dpr.gov.np/offices.php?id=1&amp;sid=3" class="partner-link-external" target="_blank">Visit KATH</a>
+                    <a href="http://kath.gov.np/" class="partner-link-external" target="_blank">Visit KATH</a>
                 </div>
             </div>
          
@@ -1933,7 +2205,7 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/HFN" class="partner-link-internal">Herbarium Frisicum</a>
+                    <a href="/partner/HFN" class="partner-link-internal">Herbarium Frisicum (HFN)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.herbariumfrisicum.nl/" class="partner-link-external" target="_blank">Visit HFN</a>
@@ -1979,6 +2251,22 @@ $html = '<!doctype html>
     
         <div class="row">
             <div class="small-12 columns">
+                <h4 class="mvs">New Caledonia</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/NOU" class="partner-link-internal">Institut de Recherche pour le Développement (NOU)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://herbier-noumea.plantnet-project.org" class="partner-link-external" target="_blank">Visit NOU</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
                 <h4 class="mvs">New Zealand</h4>
             </div>
         </div>
@@ -1997,7 +2285,7 @@ $html = '<!doctype html>
                     <a href="/partner/AK" class="partner-link-internal">Auckland War Memorial Museum Herbarium (AK)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.aucklandmuseum.com/57/botany" class="partner-link-external" target="_blank">Visit AK</a>
+                    <a href="http://www.aucklandmuseum.com/discover/collections/about-our-collections/natural-science/botany" class="partner-link-external" target="_blank">Visit AK</a>
                 </div>
             </div>
          
@@ -2036,6 +2324,22 @@ $html = '<!doctype html>
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
                     <a href="/partner/FHI" class="partner-link-internal">Forestry Research Institute of Nigeria Taxonomy Section (FHI)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.frin.gov.ng/frin1/fcp.html" class="partner-link-external" target="_blank">Visit FHI</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <h4 class="mvs">Oman</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/OBG" class="partner-link-internal">Oman Botanic Garden (OBG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     
@@ -2097,7 +2401,7 @@ $html = '<!doctype html>
                     <a href="/partner/USM" class="partner-link-internal">Herbario Universidad Nacional Mayor de San Marcos (USM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.unmsm.edu.pe/" class="partner-link-external" target="_blank">Visit USM</a>
                 </div>
             </div>
          
@@ -2144,6 +2448,15 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/NS" class="partner-link-internal">Central Siberian Botanical Garden (NS)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.csbg.nsc.ru/" class="partner-link-external" target="_blank">Visit NS</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/LE" class="partner-link-internal">Herbarium Russian Academy of Sciences - V. L. Komarov Botanical Institute (LE)</a>
                 </div>
                 <div class="small-4 large-3 columns">
@@ -2157,15 +2470,6 @@ $html = '<!doctype html>
                 </div>
                 <div class="small-4 large-3 columns">
                     
-                </div>
-            </div>
-         
-            <div class="row mbm">
-                <div class="small-8 large-9 columns">
-                    <a href="/partner/NS" class="partner-link-internal">I.M. Krasnoborov Herbarium (NS), Central Siberian Botanical Garden, Siberian Branch of Russian Academy of Sciences</a>
-                </div>
-                <div class="small-4 large-3 columns">
-                    <a href="http://www.csbg.nsc.ru/" class="partner-link-external" target="_blank">Visit NS</a>
                 </div>
             </div>
          
@@ -2247,7 +2551,7 @@ $html = '<!doctype html>
                     <a href="/partner/PRU" class="partner-link-internal">H. G. W. J. Schweickerdt Herbarium, University of Pretoria (PRU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.up.ac.za/academic/botany/index.html" class="partner-link-external" target="_blank">Visit PRU</a>
+                    <a href="https://www.up.ac.za/" class="partner-link-external" target="_blank">Visit PRU</a>
                 </div>
             </div>
          
@@ -2271,7 +2575,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/PUC" class="partner-link-internal">North West University</a>
+                    <a href="/partner/PUC" class="partner-link-internal">North-West University Herbarium (PUC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.nwu.ac.za/content/botany-herbarium" class="partner-link-external" target="_blank">Visit PUC</a>
@@ -2280,7 +2584,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/RUH" class="partner-link-internal">Rhodes University Herbarium</a>
+                    <a href="/partner/RUH" class="partner-link-internal">Rhodes University Herbarium (RUH)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.ru.ac.za/botany/" class="partner-link-external" target="_blank">Visit RUH</a>
@@ -2301,7 +2605,7 @@ $html = '<!doctype html>
                     <a href="/partner/CSIR" class="partner-link-internal">South African Diatom Collection (Council of Scientific and Industrial Reasearch), Durban (CSIR)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://ipt.sanbi.org.za/iptsanbi/resource?r=diatom" class="partner-link-external" target="_blank">Visit CSIR</a>
                 </div>
             </div>
          
@@ -2343,10 +2647,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/SANBI" class="partner-link-internal">South African National Biodiversity Institute, National Herbarium, Pretoria (PRE)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.sanbi.org/" class="partner-link-external" target="_blank">Visit SANBI</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/BOL" class="partner-link-internal">The Bolus Herbarium (BOL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.uct.ac.za/depts/bolus" class="partner-link-external" target="_blank">Visit BOL</a>
+                    <a href="http://www.bolus.uct.ac.za/" class="partner-link-external" target="_blank">Visit BOL</a>
                 </div>
             </div>
          
@@ -2371,7 +2684,7 @@ $html = '<!doctype html>
                     <a href="/partner/LOU" class="partner-link-internal">Herbario C.I.T.A.-Xunta de Galicia (LOU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.gbif.es/ic_centros_in.php?ID_Centro=9524" class="partner-link-external" target="_blank">Visit LOU</a>
+                    <a href="https://lourizan.xunta.gal/es/centro/departamentos/departamento-de-ecosistemas-forestales/infraestructuras/herbario" class="partner-link-external" target="_blank">Visit LOU</a>
                 </div>
             </div>
          
@@ -2416,7 +2729,7 @@ $html = '<!doctype html>
                     <a href="/partner/EMMA" class="partner-link-internal">Herbario Universidad Politécnica de Madrid (EMMA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www2.montes.upm.es/Dptos/DptoSilvopascicultura/botanica/herbario.html" class="partner-link-external" target="_blank">Visit EMMA</a>
+                    <a href="http://www2.montes.upm.es/dptos/dsrn/Botanica/herbario.html" class="partner-link-external" target="_blank">Visit EMMA</a>
                 </div>
             </div>
          
@@ -2476,6 +2789,15 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/SANT" class="partner-link-internal">Herbario Universidad de Santiago de Compostela (SANT)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.usc.es/herbario" class="partner-link-external" target="_blank">Visit SANT</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/SEV" class="partner-link-internal">Herbario Universidad de Sevilla (SEV)</a>
                 </div>
                 <div class="small-4 large-3 columns">
@@ -2512,7 +2834,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BCN" class="partner-link-internal">Universitat de Barcelona</a>
+                    <a href="/partner/BCN" class="partner-link-internal">Universitat de Barcelona Herbario (BCN)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.ub.edu/bioveg/botanica/cas/historia.htm" class="partner-link-external" target="_blank">Visit BCN</a>
@@ -2558,7 +2880,7 @@ $html = '<!doctype html>
                     <a href="/partner/GB" class="partner-link-internal">University of Gothenburg Herbarium (GB)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.bioenv.gu.se/english/research/research-areas/Herbarium/" class="partner-link-external" target="_blank">Visit GB</a>
+                    <a href="https://bioenv.gu.se/english/research/research-resources/herbarium" class="partner-link-external" target="_blank">Visit GB</a>
                 </div>
             </div>
          
@@ -2592,7 +2914,7 @@ $html = '<!doctype html>
                     <a href="/partner/RJPC" class="partner-link-internal">Rudolf Jenny Private Collection (RJPC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="Website" class="partner-link-external" target="_blank">Visit RJPC</a>
+                    
                 </div>
             </div>
          
@@ -2602,6 +2924,22 @@ $html = '<!doctype html>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.botanischergarten.ch/boga/home.html" class="partner-link-external" target="_blank">Visit BERN</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <h4 class="mvs">Taiwan</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/TAIF" class="partner-link-internal">Taiwan Forestry Research Institute (TAIF)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.tfri.gov.tw" class="partner-link-external" target="_blank">Visit TAIF</a>
                 </div>
             </div>
          
@@ -2633,7 +2971,7 @@ $html = '<!doctype html>
                     <a href="/partner/BK" class="partner-link-internal">Bangkok Herbarium (BK)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.doa.go.th/pvp/research.html" class="partner-link-external" target="_blank">Visit BK</a>
+                    <a href="http://www.doa.go.th/" class="partner-link-external" target="_blank">Visit BK</a>
                 </div>
             </div>
          
@@ -2658,7 +2996,23 @@ $html = '<!doctype html>
                     <a href="/partner/TOGO" class="partner-link-internal">Université du Lomé (TOGO)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.univ-lome.tg/" class="partner-link-external" target="_blank">Visit TOGO</a>
+                </div>
+            </div>
+         
+    
+        <div class="row">
+            <div class="small-12 columns">
+                <h4 class="mvs">Trinidad and Tobago</h4>
+            </div>
+        </div>
+        
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/TRIN" class="partner-link-internal">The National Herbarium of Trinidad and Tobago (TRIN)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://sta.uwi.edu/herbarium/" class="partner-link-external" target="_blank">Visit TRIN</a>
                 </div>
             </div>
          
@@ -2683,7 +3037,7 @@ $html = '<!doctype html>
                     <a href="/partner/MHU" class="partner-link-internal">Makerere University, Botany Department (MHU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://sci.mak.ac.ug/home/index.php" class="partner-link-external" target="_blank">Visit MHU</a>
+                    <a href="https://www.mak.ac.ug/" class="partner-link-external" target="_blank">Visit MHU</a>
                 </div>
             </div>
          
@@ -2696,16 +3050,16 @@ $html = '<!doctype html>
         
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/DNZ" class="partner-link-internal">Donetsk Botanical Garden of the National Academy of Sciences of Ukraine</a>
+                    <a href="/partner/DNZ" class="partner-link-internal">Donetsk Botanical Garden of the National Academy of Sciences of Ukraine (DNZ)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.dbs.dn.ua/index_en.htm" class="partner-link-external" target="_blank">Visit DNZ</a>
+                    <a href="http://www1.nas.gov.ua/en/Structure/dgb/dbg/Pages/default.aspx" class="partner-link-external" target="_blank">Visit DNZ</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/MSUD" class="partner-link-internal">I. I. Mecynikov State University of Odessa Herbarium</a>
+                    <a href="/partner/MSUD" class="partner-link-internal">I. I. Mecynikov State University of Odessa Herbarium (MSUD)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://sweetgum.nybg.org/ih/herbarium.php?irn=124801" class="partner-link-external" target="_blank">Visit MSUD</a>
@@ -2717,7 +3071,7 @@ $html = '<!doctype html>
                     <a href="/partner/LWKS" class="partner-link-internal">Institute of Ecology of the Carpathians Herbarium (LWKS)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www1.nas.gov.ua/en/Structure/dgb/iec/Pages/default.aspx" class="partner-link-external" target="_blank">Visit LWKS</a>
                 </div>
             </div>
          
@@ -2726,7 +3080,7 @@ $html = '<!doctype html>
                     <a href="/partner/LW" class="partner-link-internal">Ivan Franko National University of Lviv Herbarium (LW)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.lnu.edu.ua/Subdivisions/PROPERTY/herbary/herbary_eng.htm" class="partner-link-external" target="_blank">Visit LW</a>
+                    <a href="http://bioweb.lnu.edu.ua/en/" class="partner-link-external" target="_blank">Visit LW</a>
                 </div>
             </div>
          
@@ -2735,7 +3089,7 @@ $html = '<!doctype html>
                     <a href="/partner/LWS" class="partner-link-internal">Museum of Natural History Herbarium, National Academy of Sciences of Ukraine (LWS)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://museumkiev.org/" class="partner-link-external" target="_blank">Visit LWS</a>
                 </div>
             </div>
          
@@ -2744,13 +3098,13 @@ $html = '<!doctype html>
                     <a href="/partner/KW" class="partner-link-internal">National Herbarium of Ukraine, M.G.Kholodny Institute of Botany, National Academy of Sciences of Ukraine (KW)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.nbuv.gov.ua/herbar/index_e.htm" class="partner-link-external" target="_blank">Visit KW</a>
+                    <a href="http://www.botany.kiev.ua/index_eng.htm" class="partner-link-external" target="_blank">Visit KW</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/YALT" class="partner-link-internal">The State Nikita Botanical Gardens</a>
+                    <a href="/partner/YALT" class="partner-link-internal">The State Nikita Botanical Gardens (YALT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.lapshin.org/nikita/about.htm" class="partner-link-external" target="_blank">Visit YALT</a>
@@ -2759,10 +3113,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/CWU" class="partner-link-internal">V. N. Karasin National University Herbarium</a>
+                    <a href="/partner/CWU" class="partner-link-internal">V. N. Karazin National University Herbarium (CWU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.univer.kharkov.ua/en" class="partner-link-external" target="_blank">Visit CWU</a>
                 </div>
             </div>
          
@@ -2771,7 +3125,7 @@ $html = '<!doctype html>
                     <a href="/partner/CHER" class="partner-link-internal">Yu. Fedcovich Chernivtsi State University Herbarium (CHER)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.chnu.cv.ua/index.php?page=en/colleges/biology" class="partner-link-external" target="_blank">Visit CHER</a>
                 </div>
             </div>
          
@@ -2793,10 +3147,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/LINN" class="partner-link-internal">Linnean Society of London Herbarium (LINN)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.linnean-online.org/" class="partner-link-external" target="_blank">Visit LINN</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/NMW" class="partner-link-internal">National Museums &amp; Galleries of Wales (NMW)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.nmgw.ac.uk" class="partner-link-external" target="_blank">Visit NMW</a>
+                    <a href="https://museum.wales/cardiff/" class="partner-link-external" target="_blank">Visit NMW</a>
                 </div>
             </div>
          
@@ -2832,7 +3195,7 @@ $html = '<!doctype html>
                     <a href="/partner/WSY" class="partner-link-internal">Royal Horticultural Society (WSY)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.rhs.org.uk/learning/research/herbarium.asp" class="partner-link-external" target="_blank">Visit WSY</a>
+                    <a href="https://www.rhs.org.uk/science/conservation-biodiversity" class="partner-link-external" target="_blank">Visit WSY</a>
                 </div>
             </div>
          
@@ -2884,7 +3247,7 @@ $html = '<!doctype html>
                     <a href="/partner/ASU" class="partner-link-internal">Arizona State University Hebarium (ASU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://nhc.asu.edu/vpherbarium/" class="partner-link-external" target="_blank">Visit ASU</a>
+                    <a href="https://biokic.asu.edu/vascular-plant-herbarium" class="partner-link-external" target="_blank">Visit ASU</a>
                 </div>
             </div>
          
@@ -2899,7 +3262,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BLH" class="partner-link-internal">Billington Herbarium Cranbrook Institute of Science (BLH)</a>
+                    <a href="/partner/LSUM" class="partner-link-internal">Bernard Lowy Mycological Herbarium Louisiana State University (LSUM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     
@@ -2908,16 +3271,25 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BRIT" class="partner-link-internal">Botanical Research Institute of Texas (BRIT)</a>
+                    <a href="/partner/BLH" class="partner-link-internal">Billington Herbarium Cranbrook Institute of Science (BLH)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="www.brit.org/herbarium" class="partner-link-external" target="_blank">Visit BRIT</a>
+                    <a href="https://science.cranbrook.edu/" class="partner-link-external" target="_blank">Visit BLH</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/BRY" class="partner-link-internal">Brigham Young University Herbarium</a>
+                    <a href="/partner/BRIT" class="partner-link-internal">Botanical Research Institute of Texas (BRIT)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://www.brit.org/" class="partner-link-external" target="_blank">Visit BRIT</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/BRY" class="partner-link-internal">Brigham Young University Herbarium (BRY)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://mlbean.byu.edu/ResearchCollections/Collections/VascularPlants.aspx" class="partner-link-external" target="_blank">Visit BRY</a>
@@ -2953,10 +3325,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
+                    <a href="/partner/CDA" class="partner-link-internal">California Department of Food and Agriculture Herbarium (CDA)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://www.cdfa.ca.gov/phpps/ppd/herbarium.html" class="partner-link-external" target="_blank">Visit CDA</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
                     <a href="/partner/CM" class="partner-link-internal">Carnegie Museum of Natural History Herbarium (CM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://collections.carnegiemnh.org/botany/types/" class="partner-link-external" target="_blank">Visit CM</a>
+                    <a href="https://carnegiemnh.org/" class="partner-link-external" target="_blank">Visit CM</a>
                 </div>
             </div>
          
@@ -3001,7 +3382,7 @@ $html = '<!doctype html>
                     <a href="/partner/IND" class="partner-link-internal">Deam Herbarium Indiana University (IND)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.bio.indiana.edu/faculty/facilities/herbarium.shtml" class="partner-link-external" target="_blank">Visit IND</a>
+                    <a href="https://biology.indiana.edu/research/facilities-resources/herbarium.html" class="partner-link-external" target="_blank">Visit IND</a>
                 </div>
             </div>
          
@@ -3034,7 +3415,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/FTG" class="partner-link-internal">Fairchild Tropical Botanic Garden</a>
+                    <a href="/partner/FTG" class="partner-link-internal">Fairchild Tropical Botanic Garden (FTG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.fairchildgarden.org/" class="partner-link-external" target="_blank">Visit FTG</a>
@@ -3046,7 +3427,7 @@ $html = '<!doctype html>
                     <a href="/partner/F" class="partner-link-internal">Field Museum of Natural History, Chicago (F)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://fieldmuseum.org/vtypes" class="partner-link-external" target="_blank">Visit F</a>
+                    <a href="https://www.fieldmuseum.org/" class="partner-link-external" target="_blank">Visit F</a>
                 </div>
             </div>
          
@@ -3065,6 +3446,15 @@ $html = '<!doctype html>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.rmh.uwyo.edu/collections/usfs.php" class="partner-link-external" target="_blank">Visit USFS</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/BUT" class="partner-link-internal">Friesner Herbarium Butler University (BUT)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.butler.edu/herbarium" class="partner-link-external" target="_blank">Visit BUT</a>
                 </div>
             </div>
          
@@ -3091,7 +3481,7 @@ $html = '<!doctype html>
                     <a href="/partner/BISH" class="partner-link-internal">Herbarium Pacificum Bishop Museum (BISH)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.bishopmuseum.org/research/natsci/botany/botany.html" class="partner-link-external" target="_blank">Visit BISH</a>
+                    <a href="https://www.bishopmuseum.org/" class="partner-link-external" target="_blank">Visit BISH</a>
                 </div>
             </div>
          
@@ -3100,7 +3490,7 @@ $html = '<!doctype html>
                     <a href="/partner/AHUC" class="partner-link-internal">Herbarium University of California Davis (AHUC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://herbarium.ucdavis.edu/collectionshistory.html" class="partner-link-external" target="_blank">Visit AHUC</a>
                 </div>
             </div>
          
@@ -3109,7 +3499,7 @@ $html = '<!doctype html>
                     <a href="/partner/LA" class="partner-link-internal">Herbarium University of California Los Angeles (LA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://sites.lifesci.ucla.edu/eeb-herbarium/" class="partner-link-external" target="_blank">Visit LA</a>
                 </div>
             </div>
          
@@ -3163,7 +3553,7 @@ $html = '<!doctype html>
                     <a href="/partner/KNOX" class="partner-link-internal">Knox College Herbarium (KNOX)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="https://www.knox.edu/" class="partner-link-external" target="_blank">Visit KNOX</a>
                 </div>
             </div>
          
@@ -3190,7 +3580,16 @@ $html = '<!doctype html>
                     <a href="/partner/LL" class="partner-link-internal">Lundell Herbarium, University of Texas at Austin (LL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.biosci.utexas.edu/prc/" class="partner-link-external" target="_blank">Visit LL</a>
+                    <a href="http://w3.biosci.utexas.edu/prc/" class="partner-link-external" target="_blank">Visit LL</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/SEL" class="partner-link-internal">Marie Selby Botanical Gardens (SEL)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="http://www.selby.org/" class="partner-link-external" target="_blank">Visit SEL</a>
                 </div>
             </div>
          
@@ -3208,7 +3607,7 @@ $html = '<!doctype html>
                     <a href="/partner/MIL" class="partner-link-internal">Milwaukee Public Museum Herbarium (MIL)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.mpm.edu/collections/dept/botany/" class="partner-link-external" target="_blank">Visit MIL</a>
+                    <a href="https://www.mpm.edu/" class="partner-link-external" target="_blank">Visit MIL</a>
                 </div>
             </div>
          
@@ -3241,10 +3640,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/NMC" class="partner-link-internal">New Mexico State University Herbarium</a>
+                    <a href="/partner/NMC" class="partner-link-internal">New Mexico State University Herbarium (NMC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://biology-web.nmsu.edu/~herbarium/" class="partner-link-external" target="_blank">Visit NMC</a>
+                    <a href="http://aces.nmsu.edu/herbarium/index.html" class="partner-link-external" target="_blank">Visit NMC</a>
                 </div>
             </div>
          
@@ -3289,7 +3688,7 @@ $html = '<!doctype html>
                     <a href="/partner/OKLA" class="partner-link-internal">Oklahoma State University Herbarium (OKLA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://botany.okstate.edu/resources/herbarium.html" class="partner-link-external" target="_blank">Visit OKLA</a>
+                    <a href="http://plantbio.okstate.edu/resources/herbarium" class="partner-link-external" target="_blank">Visit OKLA</a>
                 </div>
             </div>
          
@@ -3361,16 +3760,16 @@ $html = '<!doctype html>
                     <a href="/partner/SDSU" class="partner-link-internal">San Diego State University Herbarium (SDSU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.sci.sdsu.edu/herb/" class="partner-link-external" target="_blank">Visit SDSU</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/SJNM" class="partner-link-internal">San Juan College Herbarium</a>
+                    <a href="/partner/SJNM" class="partner-link-internal">San Juan College Herbarium (SJNM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.sanjuancollege.edu/pages/425.asp" class="partner-link-external" target="_blank">Visit SJNM</a>
+                    <a href="https://www.sanjuancollege.edu/school-of-science-math-and-engineering/programs/horticulture/herbarium/" class="partner-link-external" target="_blank">Visit SJNM</a>
                 </div>
             </div>
          
@@ -3424,7 +3823,7 @@ $html = '<!doctype html>
                     <a href="/partner/YU" class="partner-link-internal">The Peabody Museum of Natural History, Yale University Herbarium (YU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.peabody.yale.edu/collections/bot/" class="partner-link-external" target="_blank">Visit YU</a>
+                    <a href="http://peabody.yale.edu/collections/botany" class="partner-link-external" target="_blank">Visit YU</a>
                 </div>
             </div>
          
@@ -3442,7 +3841,7 @@ $html = '<!doctype html>
                     <a href="/partner/NO" class="partner-link-internal">Tulane University Herbarium (NO)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.tulane.edu/~darwin/Herbarium/herbarium_index.htm" class="partner-link-external" target="_blank">Visit NO</a>
+                    <a href="http://tulane.edu/" class="partner-link-external" target="_blank">Visit NO</a>
                 </div>
             </div>
          
@@ -3457,7 +3856,7 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/ALA" class="partner-link-internal">University of Alaska Herbarium</a>
+                    <a href="/partner/ALA" class="partner-link-internal">University of Alaska Museum of the North Herbarium (ALA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.uaf.edu/museum/collections/herb/" class="partner-link-external" target="_blank">Visit ALA</a>
@@ -3505,7 +3904,7 @@ $html = '<!doctype html>
                     <a href="/partner/COLO" class="partner-link-internal">University of Colorado Museum Herbarium, University of Colorado (COLO)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://cumuseum.colorado.edu/Research/Botany/" class="partner-link-external" target="_blank">Visit COLO</a>
+                    <a href="https://www.colorado.edu/cumuseum/research-collections/botany-section-university-herbarium-colo" class="partner-link-external" target="_blank">Visit COLO</a>
                 </div>
             </div>
          
@@ -3523,7 +3922,16 @@ $html = '<!doctype html>
                     <a href="/partner/ID" class="partner-link-internal">University of Idaho Stillinger Herbarium (ID)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.uidaho.edu/herbarium.aspx" class="partner-link-external" target="_blank">Visit ID</a>
+                    <a href="http://www.uidaho.edu/research/entities/herbarium" class="partner-link-external" target="_blank">Visit ID</a>
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/CEL" class="partner-link-internal">University of Illinois Herbarium (CEL)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://cropsciences.illinois.edu/" class="partner-link-external" target="_blank">Visit CEL</a>
                 </div>
             </div>
          
@@ -3533,15 +3941,6 @@ $html = '<!doctype html>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.life.illinois.edu/plantbio/herbarium/" class="partner-link-external" target="_blank">Visit ILL</a>
-                </div>
-            </div>
-         
-            <div class="row mbm">
-                <div class="small-8 large-9 columns">
-                    <a href="/partner/CEL" class="partner-link-internal">University of Illinois, Urbana Department of Crop Sciences Herbarium</a>
-                </div>
-                <div class="small-4 large-3 columns">
-                    
                 </div>
             </div>
          
@@ -3574,10 +3973,10 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/MONTU" class="partner-link-internal">University of Montana Herbarium</a>
+                    <a href="/partner/MONTU" class="partner-link-internal">University of Montana Herbarium (MONTU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://herbarium.dbs.umt.edu/" class="partner-link-external" target="_blank">Visit MONTU</a>
+                    <a href="http://hs.umt.edu/herbarium/default.php" class="partner-link-external" target="_blank">Visit MONTU</a>
                 </div>
             </div>
          
@@ -3622,7 +4021,7 @@ $html = '<!doctype html>
                     <a href="/partner/ND" class="partner-link-internal">University of Notre Dame Herbarium (ND)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://science.nd.edu/about/facilities/jordan/museum-of-biodiversity/" class="partner-link-external" target="_blank">Visit ND</a>
+                    <a href="https://biodiversity.nd.edu/collections/greene-nieuwland-herbarium/" class="partner-link-external" target="_blank">Visit ND</a>
                 </div>
             </div>
          
@@ -3631,7 +4030,16 @@ $html = '<!doctype html>
                     <a href="/partner/ND" class="partner-link-internal">University of Notre Dame Herbarium - E. L. Greene Collection (NDG)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://science.nd.edu/about/facilities/jordan/museum-of-biodiversity/" class="partner-link-external" target="_blank">Visit ND</a>
+                    
+                </div>
+            </div>
+         
+            <div class="row mbm">
+                <div class="small-8 large-9 columns">
+                    <a href="/partner/MAPR" class="partner-link-internal">University of Puerto Rico, Mayagüez Herbario (MAPR)</a>
+                </div>
+                <div class="small-4 large-3 columns">
+                    <a href="https://www.uprm.edu/biology/facilidades/herbario/" class="partner-link-external" target="_blank">Visit MAPR</a>
                 </div>
             </div>
          
@@ -3649,16 +4057,16 @@ $html = '<!doctype html>
                     <a href="/partner/TEX" class="partner-link-internal">University of Texas at Austin Herbarium (TEX)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.biosci.utexas.edu/prc/" class="partner-link-external" target="_blank">Visit TEX</a>
+                    <a href="http://w3.biosci.utexas.edu/prc/" class="partner-link-external" target="_blank">Visit TEX</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/UT" class="partner-link-internal">University of Utah Garrett Herbarium</a>
+                    <a href="/partner/UT" class="partner-link-internal">University of Utah Herbarium (UT)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://herbarium.usu.edu/default.htm" class="partner-link-external" target="_blank">Visit UT</a>
+                    <a href="https://nhmu.utah.edu/newsdesk-subjects/garrett-herbarium" class="partner-link-external" target="_blank">Visit UT</a>
                 </div>
             </div>
          
@@ -3676,22 +4084,22 @@ $html = '<!doctype html>
                     <a href="/partner/WIS" class="partner-link-internal">University of Wisconsin Herbarium (WIS)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.botany.wisc.edu/herbarium/" class="partner-link-external" target="_blank">Visit WIS</a>
+                    <a href="https://herbarium.wisc.edu/" class="partner-link-external" target="_blank">Visit WIS</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/UWSP" class="partner-link-internal">University of Wisconsin Herbarium, Stevens Point</a>
+                    <a href="/partner/UWSP" class="partner-link-internal">University of Wisconsin-Stevens Point Herbarium (UWSP)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://wisplants.uwsp.edu/" class="partner-link-external" target="_blank">Visit UWSP</a>
+                    <a href="https://www.uwsp.edu/cols-ap/museum/Herbarium/Pages/default.aspx" class="partner-link-external" target="_blank">Visit UWSP</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/UTC" class="partner-link-internal">Utah State University Herbarium</a>
+                    <a href="/partner/UTC" class="partner-link-internal">Utah State University Herbarium (UTC)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://herbarium.usu.edu/" class="partner-link-external" target="_blank">Visit UTC</a>
@@ -3709,19 +4117,19 @@ $html = '<!doctype html>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/WET" class="partner-link-internal">Wartburg College</a>
+                    <a href="/partner/WET" class="partner-link-internal">Wartburg College Herbarium (WET)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.wartburg.edu/biology/" class="partner-link-external" target="_blank">Visit WET</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/WS" class="partner-link-internal">Washington State University Herbarium</a>
+                    <a href="/partner/WS" class="partner-link-internal">Washington State University Herbarium (WS)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://sbs.wsu.edu/herbarium/" class="partner-link-external" target="_blank">Visit WS</a>
+                    <a href="https://sbs.wsu.edu/facilities/ownbey-herbarium/" class="partner-link-external" target="_blank">Visit WS</a>
                 </div>
             </div>
          
@@ -3739,7 +4147,7 @@ $html = '<!doctype html>
                     <a href="/partner/WMU" class="partner-link-internal">Western Michigan University Herbarium (WMU)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    
+                    <a href="http://www.wmich.edu/biology/facilities/" class="partner-link-external" target="_blank">Visit WMU</a>
                 </div>
             </div>
          
@@ -3755,13 +4163,13 @@ $html = '<!doctype html>
                     <a href="/partner/MVFA" class="partner-link-internal">Herbario Bernardo Rosengurtt Universidad de la República (MVFA)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.fagro.edu.uy/~botanica/www_botanica/Herbario.html" class="partner-link-external" target="_blank">Visit MVFA</a>
+                    <a href="http://www.fagro.edu.uy/bioveg/bot%C3%A1nica.html" class="partner-link-external" target="_blank">Visit MVFA</a>
                 </div>
             </div>
          
             <div class="row mbm">
                 <div class="small-8 large-9 columns">
-                    <a href="/partner/MVM" class="partner-link-internal">Museo Nacional de Historia Natural</a>
+                    <a href="/partner/MVM" class="partner-link-internal">Museo Nacional de Historia Natural Herbario (MVM)</a>
                 </div>
                 <div class="small-4 large-3 columns">
                     <a href="http://www.mnhn.gub.uy" class="partner-link-external" target="_blank">Visit MVM</a>
@@ -3796,7 +4204,7 @@ $html = '<!doctype html>
                     <a href="/partner/VEN" class="partner-link-internal">Fundación Instituto Botánico de Venezuela (VEN)</a>
                 </div>
                 <div class="small-4 large-3 columns">
-                    <a href="http://www.ucv.ve/fibv" class="partner-link-external" target="_blank">Visit VEN</a>
+                    <a href="http://www.ucv.ve/" class="partner-link-external" target="_blank">Visit VEN</a>
                 </div>
             </div>
          
@@ -3827,25 +4235,26 @@ $html = '<!doctype html>
          
     
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            
+                
+
 
 <footer>
     <div class="row">
-        <div class="small-12 medium-9 medium-offset-3 columns">
+        <div class="small-12 medium-offset-3 columns">
             <ul class="footer-links inline-list mbn">
-                <li><a target="_blank" href="http://www.jstor.org/page/info/about/policies/terms.jsp">Terms and Conditions</a></li>
-                <li><a target="_blank" href="http://www.jstor.org/page/info/about/policies/privacy.jsp">Privacy Policy</a></li>
-                <li><a target="_blank" href="http://about.jstor.org/content/jstors-use-cookies">Cookies</a></li>
-                <li><a target="_blank" href="http://www.jstor.org/page/info/about/policies/accessibility.jsp">Accessibility</a></li>
-                <li><a target="_blank" href="http://about.jstor.org/support-training/help">Help</a></li>
-                <li><a target="_blank" href="/forms/contact" data-reveal-id="link-modal">Contact Us</a></li>
-                <li><a target="_blank" class="fb" href="https://www.facebook.com/JSTOR.org"><span class="visuallyhidden">Facebook</span></a></li>
+                <li><a href="https://about.jstor.org/terms/" target="_blank" title="This link opens in a new window">Terms and Conditions</a></li>
+                <li><a href="https://www.ithaka.org/privacypolicy" target="_blank" title="This link opens in a new window">Privacy Policy</a></li>
+                <li><a href="https://www.ithaka.org/cookies" target="_blank" title="This link opens in a new window">Cookie Policy</a></li>
+                <li><a href="https://about.jstor.org/accessibility/" target="_blank" title="This link opens in a new window">Accessibility</a></li>
+                <li><a href="https://support.jstor.org/" target="_blank" title="This link opens in a new window">Help</a></li>
+                <li><a href="https://www.jstor.org/contact-us/" target="_blank" title="This link opens in a new window">Contact Us</a></li>
+                <li><a class="fb" href="https://www.facebook.com/JSTOR.org" target="_blank" title="This link opens in a new window"><span class="visuallyhidden">Facebook</span></a></li>
                 <li>
                     
-                    <a target="_blank" class="twitter" href="https://twitter.com/jstorplants">
+                    <a class="twitter" href="https://twitter.com/jstorplants"target="_blank" title="This link opens in a new window">
                     
                     <span class="visuallyhidden">Twitter</span></a>
                 </li>
@@ -3854,12 +4263,14 @@ $html = '<!doctype html>
     </div>
     <div class="row">
         <div class="small-12 medium-3 columns">
-            <a class="ithaka-logo" href="http://www.ithaka.org"><img src="//p.j-img.org/clean_20150921T1001/files/clean/images/ITHAKA_logos_220x78.gif" alt="ITHAKA" /></a>
+            <a class="ithaka-logo" href="https://www.ithaka.org" target="_blank" title="This link opens in a new window">
+                <img src="//www.jstor.org/assets/primarysource_20190212T2341/build/images/primarysource/ithaka-logo.png" alt="ITHAKA" />
+            </a>
         </div>
         <div class="small-12 medium-9 columns mtm">
             <div class="footer-text">
             <p>JSTOR is part of ITHAKA, a not-for-profit organization helping the academic community use digital technologies to preserve the scholarly record and to advance research and teaching in sustainable ways.</p>
-            <p>&copy;2000-2016 ITHAKA. All Rights Reserved. JSTOR&reg;, the JSTOR logo, JPASS&reg;, Aluka&reg;, and ITHAKA&reg; are registered trademarks of ITHAKA.</p>
+            <p>&copy;2000-2019 ITHAKA. All Rights Reserved. JSTOR&reg;, the JSTOR logo, JPASS&reg;, Aluka&reg;, and ITHAKA&reg; are registered trademarks of ITHAKA.</p>
             </div>
         </div>
     </div>
@@ -3868,21 +4279,35 @@ $html = '<!doctype html>
     <a class="close-reveal-modal">&#9587;</a>
     <div id="link-container"></div>
 </div>
-            <!-- close the off-canvas menu -->
-            <a class="exit-off-canvas"></a>
+
+                <!-- close the off-canvas menu -->
+                <a class="exit-off-canvas"></a>
+            </div>
         </div>
-    </div>
-    
-    
+
         
-            <script type="text/javascript" src="//p.j-img.org/clean_20150921T1001/files/clean/clean.js"></script>
+
         
-    
-    <!-- Adobe DTM Footer Code -->
-        <script type="text/javascript">_satellite.pageBottom();</script>
-    <!-- end DTM Footer Code -->
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"913fae2ed4","beacon":"bam.nr-data.net","queueTime":0,"transactionName":"MlAHYEpQC0dXV0ZRWAsaI0FWUhFdWVodSEUMWARGQUIKQURXVxZBDFASRwJQCVhpRFNKQwtQF0c=","applicationTime":572,"errorBeacon":"bam.nr-data.net","applicationID":"10952930","agent":""}</script></body>
-</html>';
+        <script type="text/javascript" src="//www.jstor.org/assets/primarysource_20190212T2341/build/primarysource/js/primarysource.min.js"></script>
+        
+
+        
+            <script>
+    var logPerimeterXLoadingErrors = function() {
+        if (window.perimeterXLoadingErrors) {
+            for (var property in window.perimeterXLoadingErrors) {
+                if (window.perimeterXLoadingErrors.hasOwnProperty(property)) {
+                    jslogger.log_event("error", "perimeterx." + property + ".loadingError", {errorType: window.perimeterXLoadingErrors[property]});
+                }
+            }
+        }
+    }
+</script>
+        
+        <script src="https://static.ithaka.org/gdpr-banner/js/banner.js" type="text/javascript"></script>
+    </body>
+</html>
+';
 
 
 $html = str_replace('<div class="row">', '<ROW>', $html);
@@ -3927,7 +4352,12 @@ foreach ($rows as $row)
 				
 				echo "\thttps://plants.jstor.org/partner/" . $code;
 				echo "\t" . $code;
-				echo "\t" . $mm['partner'];
+				
+				$partner_name = $mm['partner'];
+				$partner_name = str_replace("&#39;", "'", $partner_name);
+				$partner_name = str_replace("%20", " ", $partner_name);
+				
+				echo "\t" . $partner_name;
 				
 				if (preg_match('/<a href="(?<external>.*)" class="partner-link-external"/Uu', $partner, $mm))
 				{
